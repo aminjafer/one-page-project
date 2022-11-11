@@ -20,6 +20,32 @@ a {
     justify-content: center;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+.section-title {
+    font-size: 4rem;
+    font-weight: 300;     
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title span {
+   color: crimson;
+}
+
 /* hero section */
 #hero {    
     background-image: url(https://strategylab.ca/wp-content/uploads/2012/10/taylor-grote-415993-1030x687.jpg);
@@ -110,18 +136,6 @@ a {
     margin: 0 auto;
     padding: 100px 0;
 }
-#services .section-title {
-     font-size: 4rem;
-     font-weight: 300;     
-     margin-bottom: 10px;
-     text-transform: uppercase;
-     letter-spacing: .2rem;
-     text-align: center;
-}
-
-#services .section-title span {
-    color: crimson;
-}
 
 #services .service-top p{
     font-size: 1.4rem;
@@ -129,6 +143,7 @@ a {
     line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: .05rem;
+    color: black;
 }
 
 #services .service-bottom {
@@ -136,6 +151,7 @@ a {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 #services .service-item {
@@ -145,12 +161,13 @@ a {
     justify-content: center;
     flex-direction: column;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 30px;
     background-image: url(/img/work-desk.jpg);
     background-size: cover;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 #services .service-item::after{
@@ -164,7 +181,103 @@ a {
     background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
     z-index: -1;
 }
+
+#services .service-bottom .icon {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+
+#services .service-bottom .icon img{
+    height: 100%;
+    width: 100%;    
+    object-fit: contain;
+}
+
+#services .service-item h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
 /* End services section */
+
+
+/* recent projects section */
+#projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#projects .projects-header h1{
+    margin-bottom: 50px;
+}
+
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* #projects .project-info p {
+    color: black;
+} */
+
+#projects .project-info {
+    width: 100%;
+    align-items: flex-start;
+    flex-basis: 50%;
+    padding: 30px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#projects .project-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#projects .project-info h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#projects .project-info p {
+    color: white;
+}
+
+#projects .project-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+}
+/* End recent projects section */
 
 /* Key frames */
 @keyframes text_reveal_box {
